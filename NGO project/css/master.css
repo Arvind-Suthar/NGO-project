@@ -127,7 +127,7 @@ header .nav .brand span {
 }
 
 .nav-list li {
-  padding: 20px;
+  padding: 15px 20px;
 }
 
 .nav-list li a {
@@ -139,6 +139,10 @@ header .nav .brand span {
 
 .nav-list li a:hover {
   color: #a11640;
+}
+
+.nav-list li.curr-page {
+  border-bottom: 2px solid #a11640;
 }
 
 .carousel {
@@ -376,5 +380,84 @@ header .nav .brand span {
   -webkit-box-direction: normal !important;
       -ms-flex-direction: column !important;
           flex-direction: column !important;
+}
+
+.milestone {
+  width: 80%;
+  margin: auto;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.item {
+  width: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #555;
+  text-align: center;
+}
+
+.item .title {
+  color: #303030;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.item .circle {
+  height: 20px;
+  width: 20px;
+  background: #a11640;
+  margin: 20px;
+  border-radius: 2rem;
+}
+
+.item .red-title {
+  color: #a11640;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0px 20px;
+}
+
+.item .item-body {
+  padding: 15px 0px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 700px) {
+  .milestone {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    height: auto;
+  }
+  .milestone .item {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    width: 100% !important;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
 }
 /*# sourceMappingURL=master.css.map */
