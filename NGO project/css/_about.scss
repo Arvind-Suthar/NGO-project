@@ -1,7 +1,7 @@
 .milestone {
   width: 80%;
   margin: auto;
-  height: 60vh;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -45,8 +45,36 @@
 
     .item {
       flex-direction: row !important;
-      width: 100% !important;
+      width: 70% !important;
+      margin: auto;
       justify-content: flex-start !important;
+      align-items: baseline;
+
+      .red-title {
+        padding: 0px !important;
+      }
     }
+  }
+  .item-desc {
+    padding: 0px 10px;
+    text-align: left;
+  }
+
+  .circle {
+    height: 15px !important;
+    width: 15px !important;
+  }
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 30px;
+  color: #303030;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 400px) {
+  .item {
+    width: 100% !important;
+    justify-content: center !important;
   }
 }

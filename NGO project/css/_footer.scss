@@ -57,6 +57,34 @@
     }
   }
 }
-.social-footer {
-  flex-direction: column !important;
+.social .footer-list {
+  display: flex;
+  flex-direction: row !important;
+  margin: 0;
+  padding: 0;
+
+  li {
+    padding: 0px 10px;
+  }
+}
+.social {
+  font-size: 18px;
+  padding: 0px 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    flex-direction: column !important;
+    height: fit-content !important;
+    align-items: baseline !important;
+    justify-content: center !important;
+
+    .footer-nav {
+      width: 100%;
+    }
+  }
+
+  .footer-main-txt {
+    padding: 0px 20px;
+  }
 }

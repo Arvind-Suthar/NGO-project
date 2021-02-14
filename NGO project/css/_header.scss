@@ -76,7 +76,8 @@ header {
   color: #fff;
 
   .item1,
-  .item2 {
+  .item2,
+  .item3 {
     width: 50%;
     height: 100vh;
     background-size: cover;
@@ -84,17 +85,24 @@ header {
   }
 }
 .item1 {
-  background: url("../img/carousel-bg-1.jpg.png");
+  background: url("../img/carousel-bg-1.png");
 }
 .item2 {
-  background: url("../img/carousel-bg-2.jpg.png");
+  background: url("../img/carousel-bg-2.png");
 }
-
+.item3 {
+  background: url("../img/carousel-bg-3.jpeg");
+}
 .carousel-info {
   padding: 20% 10%;
   h1 {
     font-size: 40px;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 1.5;
   }
 }
 @media only screen and (max-width: 700px) {
