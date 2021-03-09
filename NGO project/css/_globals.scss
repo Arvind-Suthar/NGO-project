@@ -7,7 +7,7 @@ body {
   font-family: "Open Sans", sans-serif;
   width: 100vw;
   height: auto;
-  overflow: hidden;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 button,
@@ -34,9 +34,33 @@ html {
   background: $pink;
   color: #fff;
 }
+.btn-pink:hover {
+  background: #c04369;
+  color: #fff;
+}
+
 .txt-pink {
   color: $pink;
 }
 .txt-dark {
   color: #2c2c2c;
+}
+.btn-block {
+  width: 100%;
+}
+.btn-w80 {
+  width: 80%;
+  margin: 0% 10%;
+}
+.text-centered {
+  text-align: center;
+}
+.btn-outline-pink {
+  border: 1px solid $pink;
+  color: $pink;
+  transition: 0.4s;
+}
+.btn-outline-pink:hover {
+  background: $pink;
+  color: #fff;
 }

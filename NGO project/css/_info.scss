@@ -58,3 +58,16 @@
   text-decoration: none;
   color: $pink;
 }
+.link-pink::after {
+  transition: 0.2s;
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  border-left: 0px solid $pink;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.link-pink:hover::after {
+  //z-index: 2;
+  border-left: 8px solid $pink;
+}

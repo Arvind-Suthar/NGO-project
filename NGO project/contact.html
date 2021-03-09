@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e017393c29.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/master.css">
+    <title>Feeding India | About</title>
+</head>
+<body>
+    <header>
+        <div class="nav" id="nav">
+            <div class="brand">
+                <a href="index.html"><img src="./img/ngo_logo.png" alt="Feeding Poor"></a><span>Food Donate Foundation</span>
+                <div class="menu-button" onclick="toggle()">
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                </div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="donate.html">DONATE</a></li>
+                <li><a href="/requestforfood.html">REQUEST FOR FOOD</a></li>
+                <li class="curr-page"><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <div class="carousel">
+            <div class="item1" id="item1">
+                <div class="carousel-info">
+                    <h1>Any questions?</h1>
+                    <h2>We are happy to help.</h2>
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="container py-5 px-2">
+        <div class="row">
+            <div class="col-lg-4">
+                <h3 class="txt-dark">Browse our FAQs</h3>
+                <select class="form-select my-4" id="faq-selector">
+                    
+                    <option value="1" onclick="showMenu('donateAccordian')">Donate</option>
+                    <option value="2" onclick="showMenu('supportAccordian')">Get Support</option>
+                    <option value="3">Volunteer</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+
+                <!---------------------- DONATE QUERIES ACCORDION -------------------------->
+
+                
+                <div class="accordion" id="donateAccordian">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="donateHeadingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#donateCollapseOne" aria-expanded="true" aria-controls="donateCollapseOne">
+                            I made a donation but haven't received a receipt against it?
+                        </button>
+                      </h2>
+                      <div id="donateCollapseOne" class="accordion-collapse collapse show" aria-labelledby="donateHeadingOne" data-bs-parent="#donateAccordian">
+                        <div class="accordion-body">
+                            Thank you for choosing to support Food Donate Foundation. All 80G certificates (tax receipts) are processed within 10 working days of the donation date.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="donateHeadingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#donateCollapseTwo" aria-expanded="false" aria-controls="donateCollapseTwo">
+                            What will my donations be used for?
+                        </button>
+                      </h2>
+                      <div id="donateCollapseTwo" class="accordion-collapse collapse" aria-labelledby="donateHeadingTwo" data-bs-parent="#donateAccordian">
+                        <div class="accordion-body">
+                            All donations are used towards supporting the overall operations of Zomato Feeding India across different programs.
+                            In light of the recent lockdowns caused by COVID-19, 
+                            your donations to 'Feed the daily wager' will be utilised to ensure a reliable supply of meals to the daily wager community.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="donateHeadingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#donateCollapseThree" aria-expanded="false" aria-controls="donateCollapseThree">
+                            I have a wedding coming up. I want to donate excess food. How can I sign up?
+                        </button>
+                      </h2>
+                      <div id="donateCollapseThree" class="accordion-collapse collapse" aria-labelledby="donateHeadingThree" data-bs-parent="#donateAccordian">
+                        <div class="accordion-body">
+                            To donate excess food from such events, please fill the query form showcased below the FAQs and we'll get in touch with you.
+                             Request you to fill the form 15 days prior to the event for us to ensure timely pick ups.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!------------------------------------------------------------------------->
+
+
+
+
+
+                  <!---------------------- GET SUPPORT QUERIES ACCORDION -------------------------->
+
+                  <div class="accordion hide" id="supportAccordian">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="supportHeadingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#supportCollapseOne" aria-expanded="true" aria-controls="supportCollapseOne">
+                            What kind of food can you support us with?
+                        </button>
+                      </h2>
+                      <div id="supportCollapseOne" class="accordion-collapse collapse show" aria-labelledby="donateHeadingOne" data-bs-parent="#supportAccordian">
+                        <div class="accordion-body">
+                            We provide raw grains as well as cooked food depending on your requirement.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="supportHeadingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#supportCollapseTwo" aria-expanded="false" aria-controls="supportCollapseTwo">
+                            What kind of cooked food do you donate?
+                        </button>
+                      </h2>
+                      <div id="supportCollapseTwo" class="accordion-collapse collapse" aria-labelledby="supportHeadingTwo" data-bs-parent="#supportAccordian">
+                        <div class="accordion-body">
+                            We provide nutritious and wholesome meals that are necessary for a child's development. This could include a basic meal like roti with sabzi, dal and rice, khichdi etc.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="supportHeadingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#supportCollapseThree" aria-expanded="false" aria-controls="supportCollapseThree">
+                            I have a wedding coming up. I want to donate excess food. How can I sign up?
+                        </button>
+                      </h2>
+                      <div id="supportCollapseThree" class="accordion-collapse collapse" aria-labelledby="supportHeadingThree" data-bs-parent="#supportAccordian">
+                        <div class="accordion-body">
+                            To donate excess food from such events, please fill the query form showcased below the FAQs and we'll get in touch with you.
+                             Request you to fill the form 15 days prior to the event for us to ensure timely pick ups.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!------------------------------------------------------------------------->
+
+
+                  <!---------------------- VOLUNTEER QUERIES ACCORDION -------------------------->
+
+                  <div class="accordion hide" id="volunteerAccordian">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="volunteerHeadingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#volunteerCollapseOne" aria-expanded="true" aria-controls="volunteerCollapseOne">
+                            What kind of food can you support us with?
+                        </button>
+                      </h2>
+                      <div id="volunteerCollapseOne" class="accordion-collapse collapse show" aria-labelledby="donateHeadingOne" data-bs-parent="#volunteerAccordian">
+                        <div class="accordion-body">
+                            We provide raw grains as well as cooked food depending on your requirement.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="volunteerHeadingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#volunteerCollapseTwo" aria-expanded="false" aria-controls="volunteerCollapseTwo">
+                            What kind of cooked food do you donate?
+                        </button>
+                      </h2>
+                      <div id="volunteerCollapseTwo" class="accordion-collapse collapse" aria-labelledby="volunteerHeadingTwo" data-bs-parent="#volunteerAccordian">
+                        <div class="accordion-body">
+                            We provide nutritious and wholesome meals that are necessary for a child's development. This could include a basic meal like roti with sabzi, dal and rice, khichdi etc.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="volunteerHeadingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#volunteerCollapseThree" aria-expanded="false" aria-controls="volunteerCollapseThree">
+                            I have a wedding coming up. I want to donate excess food. How can I sign up?
+                        </button>
+                      </h2>
+                      <div id="volunteerCollapseThree" class="accordion-collapse collapse" aria-labelledby="volunteerHeadingThree" data-bs-parent="#volunteerAccordian">
+                        <div class="accordion-body">
+                            To donate excess food from such events, please fill the query form showcased below the FAQs and we'll get in touch with you.
+                             Request you to fill the form 15 days prior to the event for us to ensure timely pick ups.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!------------------------------------------------------------------------->
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-form">
+      <h2>We'd love to hear from you</h2>
+
+      <form action="#" method="post">
+          <div class="form-section">
+              <div class="form-wrapper">
+                  <div class="input-box-wrap">
+                      <input type="text" class="input-box" placeholder="Name" id="name" autocomplete="none"/>
+                      <label class="form-label" for="name"></label>
+                  </div>
+
+                  <div class="row align-items-center">
+                      <div class="col-md-6">
+                          <div class="input-box-wrap">
+                              <input type="text" class="input-box" placeholder="Email" id="email" autocomplete="none"/>
+                              <label class="form-label" for="email"></label>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="input-box-wrap">
+                          <input type="text" class="input-box" placeholder="Phone no." id="phone-no" />
+                          <label class="form-label" for="phone-no"></label>
+                      </div>
+                      </div>
+                  </div>
+                  <div class="input-box-wrap">
+                      <input type="text" class="input-box" placeholder="Address" id="address" />
+                      <label class="form-label" for="address"></label>
+                  </div>
+                  <div class="input-box-wrap">
+                    <textarea name="details" class="input-box" placeholder="Enter Details here" id="details"></textarea>
+                    <label class="form-label h-5" for="address"></label>
+                    
+                </div>
+              </div>
+
+              
+              <button class="btn btn-pink btn-w80" type="submit">Submit</button>
+          </div>
+      </form>
+  </div>
+
+
+
+
+    <div class="footer">
+        <div class="footer-main-txt">
+            <div class="icon-box">
+                <img src="./img/ngo_logo.png" alt="Food Donate Foundation" class="footer-logo"><span>Food Donate Foundation</span>
+            </div>
+            <p class="footer-info">
+                We are commited to feed to needy and reduce world hunger
+            </p>
+            <p class="footer-info">
+                All donations are tax-exempted as eligible under section 80G <br> of the the Income Tax Act, 1961.
+            </p>
+        </div>
+        <div class="footer-nav">
+            <ul class="footer-list">
+                <li class="header">About</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+            </ul>
+            <ul class="footer-list">
+                <li class="header">Join Us</li>
+                <li>Donate</li>
+                <li>Request for food</li>
+            </ul>
+
+            <div class="social">
+                <p>Social</p>
+                <ul class="footer-list">
+                    <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</body>
+    <script src="./js/menuToggle.js"></script>
+</html>

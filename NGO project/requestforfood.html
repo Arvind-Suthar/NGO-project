@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e017393c29.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/master.css">
     <title>Feeding India | About</title>
 </head>
@@ -23,9 +24,9 @@
             </div>
             <ul class="nav-list">
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="#">DONATE</a></li>
+                <li><a href="donate.html">DONATE</a></li>
                 <li class="curr-page"><a href="/requestforfood.html">REQUEST FOR FOOD</a></li>
-                <li><a href="#">CONTACT US</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
             </ul>
         </div>
         <div class="carousel">
@@ -38,6 +39,89 @@
             </div>
         </div>
     </header>
+
+    <div class="info-panel">
+        <p class="info-header">Whether it is freshly cooked food or raw grains, <b>we’re all hands on deck </b>to take 
+            care of the food requirements for your beneficiaries.
+        </p>
+        <div class="customBox">
+            <div class="text">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident expedita commodi accusamus cum id tempora.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident expedita commodi accusamus cum id tempora.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident expedita commodi accusamus cum id tempora.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident expedita commodi accusamus cum id tempora.
+                </p>
+            </div>
+            <img src="./img/carousel-bg-1.png" alt="">
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <h1>Request food support</h1>
+
+        <form action="#" method="post">
+            <div class="form-section">
+                <div class="form-section-header">
+                    Organisation Details
+                </div>
+                <div class="form-wrapper">
+                    <div class="input-box-wrap">
+                        <input type="text" class="input-box" placeholder="Registered entity name" id="entity-name" />
+                        <label class="form-label" for="entity-name"></label>
+                    </div>
+
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="input-box-wrap">
+                                <input type="text" class="input-box" placeholder="Website link" id="website-link" />
+                                <label class="form-label" for="website-link"></label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <select name="entity-type" id="org-type" required>
+                                <option value="">Registration Status</option>
+                                <option value="1">Government Supported Entity (Registered)</option>
+                                <option value="2">Individual led charitable group</option>
+                                <option value="3">Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-box-wrap">
+                        <input type="text" class="input-box" placeholder="Address of Entity" id="entity-address" />
+                        <label class="form-label" for="entity-address"></label>
+                    </div>
+                </div>
+
+                <div class="form-section-header mt-5">
+                    Primary point of contact
+                </div>
+                <div class="form-wrapper">
+                    <div class="input-box-wrap">
+                        <input type="text" class="input-box" placeholder="Full name" id="entity-address" />
+                        <label class="form-label" for="entity-address"></label>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="input-box-wrap">
+                                <input type="text" class="input-box" placeholder="Phone no." id="phone-no" />
+                                <label class="form-label" for="website-link"></label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-box-wrap">
+                                <input type="text" class="input-box" placeholder="Email ID" id="email-id" />
+                                <label class="form-label" for="website-link"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-pink btn-w80" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
     
 
 
@@ -76,6 +160,8 @@
             
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </body>
     <script src="./js/menuToggle.js"></script>
 </html>

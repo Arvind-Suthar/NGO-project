@@ -3,7 +3,7 @@ header {
 
   .nav {
     background: rgba(0, 0, 0, 0.192);
-    //height: 80px;
+    height: 80px;
     width: 100%;
     color: #fff;
     display: flex;
@@ -50,6 +50,8 @@ header {
   display: flex;
   flex-direction: row;
   //font-weight: bold;
+  margin: 0;
+  padding: 0;
 
   li {
     padding: 15px 20px;

@@ -8,7 +8,7 @@ body {
   font-family: "Open Sans", sans-serif;
   width: 100vw;
   height: auto;
-  overflow: hidden;
+  overflow-x: hidden;
   overflow-y: scroll;
 }
 
@@ -39,6 +39,11 @@ html {
   color: #fff;
 }
 
+.btn-pink:hover {
+  background: #c04369;
+  color: #fff;
+}
+
 .txt-pink {
   color: #a11640;
 }
@@ -47,12 +52,38 @@ html {
   color: #2c2c2c;
 }
 
+.btn-block {
+  width: 100%;
+}
+
+.btn-w80 {
+  width: 80%;
+  margin: 0% 10%;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.btn-outline-pink {
+  border: 1px solid #a11640;
+  color: #a11640;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.btn-outline-pink:hover {
+  background: #a11640;
+  color: #fff;
+}
+
 header {
   height: 100vh;
 }
 
 header .nav {
   background: rgba(0, 0, 0, 0.192);
+  height: 80px;
   width: 100%;
   color: #fff;
   display: -webkit-box;
@@ -126,6 +157,8 @@ header .nav .brand span {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-list li {
@@ -311,6 +344,21 @@ header .nav .brand span {
 .link-pink {
   text-decoration: none;
   color: #a11640;
+}
+
+.link-pink::after {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  border-left: 0px solid #a11640;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.link-pink:hover::after {
+  border-left: 8px solid #a11640;
 }
 
 .footer {
@@ -547,5 +595,151 @@ header .nav .brand span {
         -ms-flex-pack: center !important;
             justify-content: center !important;
   }
+}
+
+.contact-form {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.contact-form h1 {
+  color: #2c2c2c;
+}
+
+form {
+  background: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+form .form-section {
+  width: 90%;
+  margin: 40px auto;
+}
+
+form .form-section .form-section-header {
+  color: #2c2c2c;
+  font-size: 25px;
+}
+
+.form-wrapper {
+  margin: 20px 0px;
+}
+
+.form-wrapper .input-box-wrap {
+  margin: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-wrapper .input-box-wrap .input-box {
+  font-size: 16px;
+  color: #2c2c2c;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #c4c4c4;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.form-wrapper .input-box-wrap .input-box:focus {
+  color: #a11640;
+}
+
+.form-wrapper .input-box-wrap .input-box:focus + .form-label {
+  width: 100%;
+}
+
+.form-wrapper .input-box-wrap .form-label {
+  height: 2px;
+  width: 0px;
+  background: #a11640;
+  margin-top: -2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+}
+
+select {
+  font-size: 16px;
+  color: #2c2c2c;
+  padding: 6px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #c4c4c4;
+  outline: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .contact-form {
+    width: 100% !important;
+  }
+}
+
+.h-5 {
+  height: 4px !important;
+  margin-top: -2px !important;
+}
+
+.accordion-body {
+  line-height: 1.5;
+  color: #555;
+}
+
+.hide {
+  display: none;
+}
+
+.use-list {
+  padding: 0;
+  font-size: 18px;
+  margin-bottom: 100px;
+}
+
+.use-list li {
+  list-style: none;
+  position: relative;
+  padding: 20px 0 0 20px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.use-list li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 25px;
+  width: 6px;
+  height: 12px;
+  border: solid #a11640;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 /*# sourceMappingURL=master.css.map */
