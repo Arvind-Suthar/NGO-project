@@ -1,0 +1,246 @@
+/*#326c90*/
+/*.navbar{
+  background: #000;
+  color: #aaa;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+}
+.navbar-logo{
+  background: transparent;
+  margin: 0px 100px 0px 0px;
+}
+.navbar-logo img{
+  height: 100%;
+  width: 250px;
+}
+
+.navbar-list ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 50px;
+}
+.navbar-list ul li{
+  padding: 10px 20px;
+  font-size: 17pt;
+  font-weight: 600;
+  cursor: pointer;
+}
+.navbar-list ul li a{
+  color: #ccc;
+  text-decoration: none;
+}
+.navbar-list ul li a:hover{
+  color: #f0f0f0;
+}
+.navbar-list ul li a.active{
+  color: #fff;
+}
+.user{
+  padding: 10px;
+  font-size: 17pt;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  margin: 0px 50px;
+}
+.btn{
+  padding: 8px 15px;
+  margin: 0px 10px;
+  background: transparent;
+  border: none;
+}
+.btn-signout{
+  border: 2px solid #9e4f58;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+.btn-signout:hover{
+  background: #9e4f58;
+  color: #fff;
+}
+.btn-signout:hover a{
+  color: #fff;
+}
+.btn-signout a{
+  text-decoration: none;
+  color: #9e4f58;
+  transition: color 0.5s;
+}
+*/
+.login-button-form span {
+  padding: 10px;
+  color: #fff;
+  text-transform: capitalize;
+}
+/*-----------PRICING----------------*/
+.pricing-wrap {
+  /*background: linear-gradient(to bottom, #326c90 80%, #fff 20%);*/
+  background: #326c90;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.pricing-wrap p {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-family: calibri;
+}
+.pricing-wrap .title1 {
+  font-size: 50pt;
+  padding: 50px 0px 0px 0px;
+  font-weight: bolder;
+}
+.pricing-wrap .title2 {
+  font-size: 20pt;
+}
+.pricing-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: baseline;
+}
+@media (max-width: 800px) {
+  .pricing-container {
+    flex-flow: column !important;
+  }
+  .pricing-panel {
+    width: 70% !important;
+    margin: 5% 15% !important;
+  }
+}
+.pricing-panel {
+  background: #fff;
+  margin: 20px;
+  width: calc((100% / 4) - 30px);
+  border-radius: 10px;
+  transition: 0.7s;
+  outline: none;
+  border: none;
+  text-align: center;
+  font-family: calibri;
+}
+.panel-header {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  background: #326c90;
+  min-height: 25px;
+  color: #326c90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.panel-standard .panel-header {
+  color: #fff;
+  background: #4b8a6f;
+  font-weight: bolder;
+}
+.pricing-panel:hover {
+  transform: scale(1.1);
+}
+.pricing-panel p {
+  color: #777;
+  margin: 0px;
+  padding: 0px;
+}
+.pricing-panel .title {
+  font-size: 30pt;
+  font-weight: bolder;
+  padding: 25px 0px 0px 0px;
+}
+.panel-basic .title {
+  color: #224b96;
+}
+.panel-standard .title {
+  color: #4b8a6f;
+}
+.panel-premium .title {
+  color: #cec561;
+}
+.pricing-panel .price {
+  font-size: 30pt;
+  padding: 20px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+.pricing-panel .price span {
+  font-size: 15pt;
+}
+.panel-premium .price {
+  font-size: 20pt;
+}
+.pricing-panel button {
+  background: #888;
+  border: none;
+  font-size: 12pt;
+  padding: 15px 25px;
+  width: 50%;
+  border-radius: 2em;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.5s, box-shadow 0.5s;
+  outline: none;
+  margin: 30px 10px;
+}
+.panel-basic button {
+  background: #224b96;
+}
+.panel-basic button:hover {
+  background: #1d3e7b;
+  box-shadow: 0px 2px 10px #555;
+}
+.panel-standard button {
+  background: #4b8a6f;
+}
+.panel-standard button:hover {
+  background: #376350;
+  box-shadow: 0px 2px 10px #555;
+}
+.panel-premium button {
+  background: #cec561;
+}
+.panel-premium button:hover {
+  background: #bdb55b;
+  box-shadow: 0px 2px 10px #555;
+}
+
+.features ul {
+  list-style-type: none;
+  text-align: left;
+  color: #326c90;
+  font-size: 15pt;
+  font-style: italic;
+}
+.features ul li {
+  padding: 5px 10px;
+}
+.btn-login {
+  color: #fff;
+  outline: none;
+  background: #224b96;
+  border-radius: 2em;
+  padding: 15px 20px;
+  font-size: 11pt;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.login-button-form .nav-link {
+  color: #ffffff80;
+}
+.login-button-form .nav-link:hover {
+  color: #fff;
+}
